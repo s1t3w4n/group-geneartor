@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var name = "Hello!";
+    var url = window.location.href;
+
+    var dataObjects =
+        [{
+            fName: "Дальневосточный филиал (г.Хабаровск)",
+            nomination: [{
+                nName: "Административное право",
+                password: "rucu2b"
+            }, {
+                nName: "Гражданское право",
+                password: "minogb"
+            }, {
+                nName: "Гражданское и административное судопроизводство",
+                password: "2dfg91"
+            }, {
+                nName: "Земельное и экологическое право",
+                password: "4cojs1"
+            }, {
+                nName: "Информационное право",
+                password: "bf505s"
+            }, {
+                nName: "История права и государства",
+                password: "px8a5f"
+            }, {
+                nName: "Конституционное право",
+                password: "ys70rs"
+            }, {
+                nName: "Международное право",
+                password: "ulgu9i"
+            }, {
+                nName: "Организация судебной и правоохранительной деятельности",
+                password: "c7cuqe"
+            }, {
+                nName: "Правовое обеспечение экономической деятельности",
+                password: "d4i9d9"
+            }, {
+                nName: "Язык и право",
+                password: "kobpuj"
+            }, {
+                nName: "Судебная экспертиза и криминалистика",
+                password: "y5lshu"
+            }, {
+                nName: "Теория права, государства и судебной власти",
+                password: "5m5fzs"
+            }, {
+                nName: "Трудовое право и право социального обеспечения",
+                password: "lu15h6"
+            }, {
+                nName: "Уголовное право",
+                password: "kqja9d"
+            }, {
+                nName: "Уголовно-процессуальное право",
+                password: "ljb3qf"
+            }, {
+                nName: "Философия и социально-гуманитарные дисциплины",
+                password: "p5m3i5"
+            }, {
+                nName: "Финансовое право",
+                password: "udyfe6"
+            }, {
+                nName: "Экономика и управление недвижимостью",
+                password: "d1gmcy"
+            }, {
+                nName: "Экономика",
+                password: "jz2ucy"
+            }]
+        },
+            {
+                fName: "Восточно-Сибирский филиал (г. Иркутск)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "e8ftm2"
+                }, {
+                    nName: "Гражданское право",
+                    password: "yf422p"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "pe06xz"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "ivtwm6"
+                }, {
+                    nName: "Информационное право",
+                    password: "22z6c7"
+                }, {
+                    nName: "История права и государства",
+                    password: "v98xsw"
+                }, {
+                    nName: "Конституционное право",
+                    password: "hlhpnz"
+                }, {
+                    nName: "Международное право",
+                    password: "3y8xw9"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "c6m5ru"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "mf95wa"
+                }, {
+                    nName: "Язык и право",
+                    password: "y4wgmi"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "pp33fq"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "hjeeui"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "xlaohq"
+                }, {
+                    nName: "Уголовное право",
+                    password: "ibqv7p"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "dwfly2"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "s0h3mj"
+                }, {
+                    nName: "Финансовое право",
+                    password: "w9c31s"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "wqcz3q"
+                }, {
+                    nName: "Экономика",
+                    password: "lc56zq"
+                }]
+            },
+            {
+                fName: "Западно-Сибирский филиал (г. Томск)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "6n24ka"
+                }, {
+                    nName: "Гражданское право",
+                    password: "1iyfmi"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "shk1xs"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "f8t7pa"
+                }, {
+                    nName: "Информационное право",
+                    password: "ijfrgl"
+                }, {
+                    nName: "История права и государства",
+                    password: "zsqu6q"
+                }, {
+                    nName: "Конституционное право",
+                    password: "5c8w1c"
+                }, {
+                    nName: "Международное право",
+                    password: "pgk2fa"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "q1u37r"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "5gyq9l"
+                }, {
+                    nName: "Язык и право",
+                    password: "xhnsm7"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "h0cp0u"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "idnrau"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "927y8i"
+                }, {
+                    nName: "Уголовное право",
+                    password: "tqsyzs"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "l54gcx"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "p8aaxp"
+                }, {
+                    nName: "Финансовое право",
+                    password: "4nv6l3"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "6ep2x1"
+                }, {
+                    nName: "Экономика",
+                    password: "3d2q9l"
+                }]
+            },
+            {
+                fName: "Казанский филиал (г. Казань)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "0n4iog"
+                }, {
+                    nName: "Гражданское право",
+                    password: "s0p1e7"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "rc749d"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "bdy2ef"
+                }, {
+                    nName: "Информационное право",
+                    password: "wcefhw"
+                }, {
+                    nName: "История права и государства",
+                    password: "elq79x"
+                }, {
+                    nName: "Конституционное право",
+                    password: "zhpjgj"
+                }, {
+                    nName: "Международное право",
+                    password: "nh376w"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "fwmogg"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "8or09b"
+                }, {
+                    nName: "Язык и право",
+                    password: "6z87ag"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "npj9uy"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "90uf5f"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "fxpw1q"
+                }, {
+                    nName: "Уголовное право",
+                    password: "6rygle"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "yju10q"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "8zif65"
+                }, {
+                    nName: "Финансовое право",
+                    password: "20nad3"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "x5aw2s"
+                }, {
+                    nName: "Экономика",
+                    password: "p8cuyh"
+                }]
+            },
+            {
+                fName: "г.Москва",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "f6nzc7"
+                }, {
+                    nName: "Гражданское право",
+                    password: "h66aam"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "c15sdk"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "uphw28"
+                }, {
+                    nName: "Информационное право",
+                    password: "cm9ixv"
+                }, {
+                    nName: "История права и государства",
+                    password: "y5yntl"
+                }, {
+                    nName: "Конституционное право",
+                    password: "qi3dmh"
+                }, {
+                    nName: "Международное право",
+                    password: "cc72bl"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "9tdb3f"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "v5dite"
+                }, {
+                    nName: "Язык и право",
+                    password: "sa5tz4"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "k52sgo"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "2wk2kz"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "7fi618"
+                }, {
+                    nName: "Уголовное право",
+                    password: "h3xqes"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "wzxoc7"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "5ee7ro"
+                }, {
+                    nName: "Финансовое право",
+                    password: "bfoz2b"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "bdr9w4"
+                }, {
+                    nName: "Экономика",
+                    password: "j0tv9r"
+                }]
+            },
+            {
+                fName: "Приволжский филиал (г. Нижний Новгород)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "08sota"
+                }, {
+                    nName: "Гражданское право",
+                    password: "l2eoks"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "fmogln"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "oc3v1j"
+                }, {
+                    nName: "Информационное право",
+                    password: "si8t8n"
+                }, {
+                    nName: "История права и государства",
+                    password: "86as4b"
+                }, {
+                    nName: "Конституционное право",
+                    password: "9mtvro"
+                }, {
+                    nName: "Международное право",
+                    password: "311g6z"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "lnfm5o"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "27mm6q"
+                }, {
+                    nName: "Язык и право",
+                    password: "esfqtk"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "vwp06h"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "xbjblw"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "kt8z0l"
+                }, {
+                    nName: "Уголовное право",
+                    password: "pux5ar"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "mf42zc"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "grfnw2"
+                }, {
+                    nName: "Финансовое право",
+                    password: "4gvvtg"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "pqixtv"
+                }, {
+                    nName: "Экономика",
+                    password: "vowf09"
+                }]
+            },
+            {
+                fName: "Ростовский филиал (г. Ростов-на-Дону)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "ecacns"
+                }, {
+                    nName: "Гражданское право",
+                    password: "8yrrta"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "avzf9v"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "mnur4v"
+                }, {
+                    nName: "Информационное право",
+                    password: "t8yeos"
+                }, {
+                    nName: "История права и государства",
+                    password: "tcszz4"
+                }, {
+                    nName: "Конституционное право",
+                    password: "ca93la"
+                }, {
+                    nName: "Международное право",
+                    password: "l4u5ep"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "p1c188"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "qugrqh"
+                }, {
+                    nName: "Язык и право",
+                    password: "g9nnw3"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "3s5236"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "z4otnd"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "pzima2"
+                }, {
+                    nName: "Уголовное право",
+                    password: "zeyomy"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "mflvel"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "cbmeio"
+                }, {
+                    nName: "Финансовое право",
+                    password: "9wkheb"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "yzigrr"
+                }, {
+                    nName: "Экономика",
+                    password: "003mm4"
+                }]
+            },
+            {
+                fName: "Северо-Западный филиал (г. Санкт-Петербург)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "ygdcg6"
+                }, {
+                    nName: "Гражданское право",
+                    password: "vmkutz"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "8foot6"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "z1cip7"
+                }, {
+                    nName: "Информационное право",
+                    password: "2g985n"
+                }, {
+                    nName: "История права и государства",
+                    password: "tq785i"
+                }, {
+                    nName: "Конституционное право",
+                    password: "oqhgh6"
+                }, {
+                    nName: "Международное право",
+                    password: "46jxlt"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "pt3w6r"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "uh5rn6"
+                }, {
+                    nName: "Язык и право",
+                    password: "gjc3xt"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "uaxgvw"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "h56hct"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "n65zso"
+                }, {
+                    nName: "Уголовное право",
+                    password: "5rm2zu"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "2rfz0x"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "4uqsbs"
+                }, {
+                    nName: "Финансовое право",
+                    password: "hp7tr4"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "o9gwbk"
+                }, {
+                    nName: "Экономика",
+                    password: "i4xr8w"
+                }]
+            },
+            {
+                fName: "Северо-Кавказский филиал (г. Краснодар)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "dsok1k"
+                }, {
+                    nName: "Гражданское право",
+                    password: "qd4nay"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "w50iov"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "xo07oh"
+                }, {
+                    nName: "Информационное право",
+                    password: "b2gosw"
+                }, {
+                    nName: "История права и государства",
+                    password: "a3l96k"
+                }, {
+                    nName: "Конституционное право",
+                    password: "l9gmvm"
+                }, {
+                    nName: "Международное право",
+                    password: "2w7dfc"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "ylaz1r"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "aty5h4"
+                }, {
+                    nName: "Язык и право",
+                    password: "nqoc28"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "3gdzpe"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "k91nho"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "ssngm6"
+                }, {
+                    nName: "Уголовное право",
+                    password: "plhehu"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "t7ajps"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "hc4o7n"
+                }, {
+                    nName: "Финансовое право",
+                    password: "duva78"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "vxa1r0"
+                }, {
+                    nName: "Экономика",
+                    password: "26tw7k"
+                }]
+            },
+            {
+                fName: "Уральский филиал (г. Челябинск)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "ps7ziw"
+                }, {
+                    nName: "Гражданское право",
+                    password: "iaf9ro"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "ims74i"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "6ikb4h"
+                }, {
+                    nName: "Информационное право",
+                    password: "i3npcd"
+                }, {
+                    nName: "История права и государства",
+                    password: "0ba5vi"
+                }, {
+                    nName: "Конституционное право",
+                    password: "c5gd76"
+                }, {
+                    nName: "Международное право",
+                    password: "zkfh6h"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "zh63r2"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "8vam18"
+                }, {
+                    nName: "Язык и право",
+                    password: "zddb9f"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "sn1psa"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "vuc0ak"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "3offn2"
+                }, {
+                    nName: "Уголовное право",
+                    password: "npztc2"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "6uwdco"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "spysw6"
+                }, {
+                    nName: "Финансовое право",
+                    password: "8vlucs"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "ybc4zu"
+                }, {
+                    nName: "Экономика",
+                    password: "s6wd3z"
+                }]
+            },
+            {
+                fName: "Центральный филиал (г. Воронеж)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "65ha6x"
+                }, {
+                    nName: "Гражданское право",
+                    password: "ksuoid"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "el2vzm"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "nz3i1i"
+                }, {
+                    nName: "Информационное право",
+                    password: "c2u4wk"
+                }, {
+                    nName: "История права и государства",
+                    password: "vhxn9u"
+                }, {
+                    nName: "Конституционное право",
+                    password: "c0ql6n"
+                }, {
+                    nName: "Международное право",
+                    password: "u94oh3"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "m2b2c0"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "1hp4g0"
+                }, {
+                    nName: "Язык и право",
+                    password: "1m95r0"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "e1va0l"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "mfn2ch"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "5xz0nl"
+                }, {
+                    nName: "Уголовное право",
+                    password: "s57uof"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "eytcn8"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "prk4sh"
+                }, {
+                    nName: "Финансовое право",
+                    password: "0169on"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "l6s5vk"
+                }, {
+                    nName: "Экономика",
+                    password: "1batmt"
+                }]
+            },
+            {
+                fName: "Крымский филиал (г. Симферополь)",
+                nomination: [{
+                    nName: "Административное право",
+                    password: "5q9uop"
+                }, {
+                    nName: "Гражданское право",
+                    password: "t0c4xr"
+                }, {
+                    nName: "Гражданское и административное судопроизводство",
+                    password: "5ufjd8"
+                }, {
+                    nName: "Земельное и экологическое право",
+                    password: "j6slwo"
+                }, {
+                    nName: "Информационное право",
+                    password: "qzp635"
+                }, {
+                    nName: "История права и государства",
+                    password: "7u5e3y"
+                }, {
+                    nName: "Конституционное право",
+                    password: "q4hxee"
+                }, {
+                    nName: "Международное право",
+                    password: "3wqjnl"
+                }, {
+                    nName: "Организация судебной и правоохранительной деятельности",
+                    password: "jghttx"
+                }, {
+                    nName: "Правовое обеспечение экономической деятельности",
+                    password: "8rn9z2"
+                }, {
+                    nName: "Язык и право",
+                    password: "kpus86"
+                }, {
+                    nName: "Судебная экспертиза и криминалистика",
+                    password: "u2nkhq"
+                }, {
+                    nName: "Теория права, государства и судебной власти",
+                    password: "ia7inj"
+                }, {
+                    nName: "Трудовое право и право социального обеспечения",
+                    password: "ccxz43"
+                }, {
+                    nName: "Уголовное право",
+                    password: "2b5jin"
+                }, {
+                    nName: "Уголовно-процессуальное право",
+                    password: "nm75um"
+                }, {
+                    nName: "Философия и социально-гуманитарные дисциплины",
+                    password: "gl5j0f"
+                }, {
+                    nName: "Финансовое право",
+                    password: "p37v1f"
+                }, {
+                    nName: "Экономика и управление недвижимостью",
+                    password: "3mool6"
+                }, {
+                    nName: "Экономика",
+                    password: "5vwj37"
+                }]
+            }];
+
+    window.onload = function () {
+        fillBody();
+    };
+
+    function enrol() {
+        var thisf = document.getElementById("filials").value;
+        var thisn = document.getElementById("nominations").value;
+        var password = dataObjects.find(function (filial) {
+            return (filial.fName === thisf);
+        }).nomination.find(function (nomiantion) {
+            return (nomiantion.nName === thisn);
+        }).password;
+        document.getElementById("button").value = name;
+        document.getElementById("enrolpassword_28416").value = password;
+        document.getElementById("id_submitbutton").click();
+    }
+
+    function hide() {
+        document.getElementById("mform1").style.display = "none";
+    }
+
+    function fillBody() {
+        if (url != "https://femida.raj.ru/course/index.php?categoryid=4238") {
+            //hide();
+            document.getElementById("but").innerHTML =
+                '<input type="submit" value="Мной данные введены верно" id="button" onclick="enrol()">';
+
+            document.getElementById("but").style.display = "none";
+            fillFil();
+        }
+    }
+
+    function fillFil() {
+        var html = '<select id="filials" onchange="fillNom()" onclick="displayBut()">';
+        html += '<option id="infoFil">Выберите филиал в котором обучаетесь</option>';
+        dataObjects.forEach(function (filial) {
+            html += '<option>' + filial.fName + '</option>';
+        });
+        html += '</select>';
+        document.getElementById("fil").innerHTML = html;
+    }
+
+    function fillNom() {
+        var html = '<select id="nominations" onchange="displayBut()">';
+        html += '<option id="infoNom">Выберите номинацию в которой будете участвовать</option>';
+        dataObjects.find(function (filial) {
+            return (filial.fName === document.getElementById("filials").value);
+        }).nomination.forEach(function (nomination) {
+            html += '<option>' + nomination.nName + '</option>';
+        });
+        html += '</select>';
+        document.getElementById("nom").innerHTML = html;
+    }
+
+    function displayBut() {
+        if (document.getElementById("nominations").value !== document.getElementById("infoNom").value &&
+            document.getElementById("filials").value !== document.getElementById("infoFil").value) {
+            document.getElementById("but").style.display = "inline";
+        } else {
+            document.getElementById("but").style.display = "none";
+        }
+    }
+
+</script>
+<div id="fil"></div>
+<div id="nom"></div>
+<div id="but" align="right"></div>
+</body>
+</html>
