@@ -1,7 +1,7 @@
 # group-generator
-simple way to genearate some text files
+simple way to genearate some text files =)
 
-I needed to create some files to upload them on another website.
+I needed to create some files to upload them to another website.
 
 These files holds data about: 240 groups, the meta data, passwords, e.t.c witch will be uses in the curent work.
 
